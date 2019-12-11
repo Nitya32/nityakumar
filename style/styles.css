@@ -1,7 +1,6 @@
 *{margin:0;padding:0;font-size:2vw;}
 body{padding:1vw 8vw; position:relative;}
 
-/*
 .parallax{
 background-color:white;
 border:black solid 2px;
@@ -12,8 +11,8 @@ margin-left:15vw;
 z-index:500;
 position:relative;
 top:13vw;
+display:none;
 }
-*/
 
 h1{
 font-family:Playfair Display;
@@ -29,7 +28,7 @@ color:black;
 font-size:4vw;
 position:fixed;
 z-index:100;
-top:57vw;
+bottom:5vw;
 }
 
 .hamburger{
@@ -79,6 +78,8 @@ border-radius:3vw;
 position:fixed;
 z-index:2000;
 margin-top:1vw;
+display:none;
+transition:all 1s;
 }
 
 .header_text{
