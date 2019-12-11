@@ -1,0 +1,328 @@
+html {
+  background: #9d9d9d;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0;
+}
+
+.imgs {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 10px 0 10px 0;
+}
+
+.info-1 {
+	background: rgba(0, 0, 0, 0.8);
+	width: inherit;
+	height: inherit;
+  border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+
+.infos h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+	font-size: 25px;
+  height: 30px;
+	margin: 0;
+	padding: 55px 0 15px 0;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.infos p {
+  font-size: 15px;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 10px;
+  margin: 0 30px;
+  line-height: 1.7;
+}
+
+.infos p a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.info-1 p a:hover {
+	color: #b8860b;
+}
+
+.info-2 p a:hover {
+	color: #59405c;
+}
+
+.info-3 p a:hover {
+	color: #ff8989;
+}
+
+.info-4 p a:hover {
+	color: #b8860b !important;
+}
+
+.img-1 {
+  background-image: url("https://images.unsplash.com/photo-1450704944629-6a65f6810cf2?auto=format&fit=crop&w=1647&q=80");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: inset
+		0 0 0 20px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+	transition: all 0.4s ease-in-out;
+}
+
+.img-1:hover {
+  box-shadow: 
+		inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+		0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.imgs:hover .infos {
+  transform: scale(1);
+	opacity: 1;
+}
+
+.info-2 {
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+
+.img-2 {
+    
+    background-image: url(../imgs/trail1-2.png);
+/*  background-image: url("https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?auto=format&fit=crop&w=1567&q=80");*/
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 
+		inset 0 0 0 0 rgba(89, 64, 92, 0.4),
+		inset 0 0 0 20px rgba(255, 255, 255, 0.5),
+		0 1px 2px rgba(0, 0, 0, 0.3);
+	transition: all 0.4s ease-in-out;
+}
+
+.img-2:hover {
+  box-shadow: 
+		inset 0 0 0 150px rgba(89, 64, 92, 0.6),
+		inset 0 0 0 20px rgba(89, 64, 92, 0.6),
+		0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.img-3 {
+  background-image: url("https://images.unsplash.com/photo-1505357957917-ed2e269a1b47?auto=format&fit=crop&w=1650&q=80");
+  background-position: center center;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.info-3-front {
+  background-image: url("https://images.unsplash.com/photo-1505357957917-ed2e269a1b47?auto=format&fit=crop&w=1650&q=80");
+  background-position: center;
+  box-shadow: 
+		inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.wrap-3 {
+  position: absolute;
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	transition: all 0.4s ease-in-out;
+  perspective: 1000px;
+	top: 20px;
+	left: 20px;
+	background: #9d9d9d; 
+	box-shadow: 
+		0 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.info-3 {
+	position: absolute;
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	transition: all 0.4s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.info-3-front, .info-3-back {
+	display: block;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%; 
+	-webkit-backface-visibility: hidden;
+}
+
+.info-3-back {
+	transform: rotate3d(0, 1, 0, 180deg);
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.img-3:hover .wrap-3 {
+	box-shadow: 
+		0 0 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.img-3:hover .info-3 {
+	transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.img-4 {
+  background-image: url("https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?auto=format&fit=crop&w=1651&q=80");
+  background-position: center;
+  position: relative;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.wrap-4, .info-4 {
+	position: absolute;
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	transition: all 0.4s ease-in-out;
+}
+
+.wrap-4 {
+	top: 20px;
+	left: 20px;
+	background: #9d9d9d;
+	box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2);
+	perspective: 1000px;
+}
+
+.info-4 {
+	transform-style: preserve-3d;
+}
+
+.info-4 h3, .info-4 p, .info-4 a {
+    color: #000 !important;
+}
+
+.info-4 p {
+  border-top: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+
+.info-4-front {
+  background-image: url("https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?auto=format&fit=crop&w=1651&q=80");
+  background-position: center;
+  transform-origin: 50% 100%;	
+	z-index: 100;
+	box-shadow: 
+		inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.info-4-front, .info-4-back {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center;
+	transition: all 0.6s ease-in-out;
+}
+
+.info-4-back {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.img-4:hover .info-4-front {
+	transform: rotate3d(1, 0, 0, -180deg);
+	box-shadow: 
+		inset 0 0 5px rgba(255, 255, 255, 0.2), 
+		inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.img-4:hover .info-4-back {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+/*________________________________________________*/
+
+.circle{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 10px 0 10px 0;
+}
+
+.circle:hover .red {
+  transform: scale(1);
+	opacity: 1;
+}
+
+.circle-1 {
+background-image: url(../imgs/trail1-2.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 
+		inset 0 0 0 0 rgba(89, 64, 92, 0.4),
+		inset 0 0 0 20px rgba(255, 255, 255, 0.5),
+		0 1px 2px rgba(0, 0, 0, 0.3);
+	transition: all 0.4s ease-in-out;
+}
+
+.circle-1:hover {
+  box-shadow: 
+		inset 0 0 0 150px rgba(89, 64, 92, 0.6),
+		inset 0 0 0 20px rgba(89, 64, 92, 0.6),
+		0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.red h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+	font-size: 25px;
+  height: 30px;
+	margin: 0;
+	padding: 55px 0 15px 0;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.red p {
+  font-size: 15px;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 10px;
+  margin: 0 30px;
+  line-height: 1.7;
+}
+
+.red p a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+
+.red-2 {
+/*
+    background-image: url(../imgs/trail1-2.png);
+    background-size: cover;
+    background-position: center;
+*/
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+
+.red-2 p a:hover {
+	color: #59405c;
+}
