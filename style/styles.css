@@ -274,6 +274,7 @@ background-color:black;
 .header1{
 margin-left:76vw;
 transition:all 1s;
+text-decoration:none;
 }
 
 .header2{
