@@ -1,10 +1,17 @@
-$(".hamburger").click(function(){
+$(document).ready(function() {
+    $(".hamburger").click(function(){
     $(".header").toggleClass('show');
 });
 
 $(".circle").click(function(event){
     var n = $(this).attr('class').slice(-1);
+    $(".rellax").each(function() {
+        $(this).removeClass('show')
+    })
     $(".parallax" + n).toggleClass('show');
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $('.parallax'+n).offset().top
+    }, 500)
 });
 
 $(".close-parallax").click(function(){
@@ -17,7 +24,7 @@ $(document).click(function(event){
     //select the elements you want to close
 //    if( )
 //    $(".rellax.show").removeClass("show");
-})
+});
 
 
 //
@@ -34,4 +41,6 @@ $(document).click(function(event){
 //        parallax.style.display = "none";
 //    }
 //       
-//}
+//
+
+})
