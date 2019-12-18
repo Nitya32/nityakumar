@@ -887,7 +887,7 @@ transition-property: width;
 
 .code_credit{
 position:fixed;
-z-index:3000;
+/*z-index:3000;*/
 /*margin-top:58vw;*/
 top:0vw;
 margin-top:62.5vw;
