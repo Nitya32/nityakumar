@@ -110,7 +110,7 @@ position:relative;
 top:13vw;
 /*display:none;*/
 opacity: 0;
-transition: opacity 0.5s ease;
+transition: opacity 1s ease;
 pointer-events: none;
 }
 .parallax4{
@@ -124,7 +124,7 @@ z-index:500;
 position:relative;
 top:13vw;
 opacity: 0;
-transition: opacity 0.5s ease;
+transition: opacity 1s ease;
 pointer-events: none;
 }
 .parallax5{
@@ -138,7 +138,7 @@ z-index:500;
 position:relative;
 top:13vw;
 opacity: 0;
-transition: opacity 0.5s ease;
+transition: opacity 1s ease;
 pointer-events: none;
 }
 .parallax6{
@@ -152,7 +152,7 @@ z-index:500;
 position:relative;
 top:13vw;
 opacity: 0;
-transition: opacity 0.5s ease;
+transition: opacity 1.2s ease;
 pointer-events: none;
 }
 .parallax7{
@@ -165,7 +165,7 @@ margin-left:15vw;
 z-index:500;
 position:relative;
 top:13vw;
-    display:none;}
+opacity: 0;}
 .parallax8{
 background-color:white;
 border:black solid 2px;
@@ -567,6 +567,25 @@ grid-area:p8;
 }
 
 /*
+.about_grid{
+display:grid;
+grid-gap:.85vw;
+grid-template-areas:"ab1"
+                    "ab2";
+padding-left:.85vw;
+    padding-right:.85vw;}
+}
+
+.about_gif1{
+grid-area:ab1;
+
+}
+.black13{
+background-color: black;
+grid-area:ab2;
+}
+*/
+/*
 
 height:30vw;
 width:50vw;
@@ -875,6 +894,13 @@ border-bottom: 0;
    opacity: 1;
     pointer-events: auto;
 }
+
+/*
+.show_2 {
+   opacity: 1;
+    pointer-events: auto;
+}
+*/
     
 /*
 transition-property: width;

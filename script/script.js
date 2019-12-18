@@ -21,6 +21,11 @@ $(".close-parallax").click(function(){
 $(document).click(function(event){
     console.log($(this));
     
+//$(".header3").click(function() {
+//    $(".lax7").toggleClass('show_2');
+//});
+
+    
     //select the elements you want to close
 //    if( )
 //    $(".rellax.show").removeClass("show");
