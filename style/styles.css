@@ -2,6 +2,16 @@
     margin:0;padding:0;font-size:2vw;
     cursor: url('../imgs/cursor.png'), auto!important;
 }
+
+html{
+   background-color:
+/*       #65505C*/
+       #C3D2C2;
+}
+.circle-1{
+cursor: url('../imgs/cursor_hover.png'),
+auto!important;  
+}
 body{
 padding:1vw 8vw; position:relative;
 /*
@@ -34,7 +44,7 @@ margin-top:-1.5vw;
   top: 32px;
   width: 32px;
   height: 32px;
-  opacity: 0.3;
+  opacity:0.5;
 }
 button {
   all: unset;
@@ -47,8 +57,8 @@ button {
   left: 15px;
   content: ' ';
   height: 33px;
-  width: 2px;
-  background-color: #333;
+  width: 6px;
+  background-color:black;
 }
 .close-parallax:before {
   transform: rotate(45deg);
@@ -72,6 +82,7 @@ top:13vw;
 opacity: 0;
 transition: opacity 0.5s ease;
 pointer-events: none;
+
 }
 .parallax2{
 background-color:white;
@@ -695,31 +706,31 @@ width:25vw;
 position:relative;
 }
 
-.circle:hover .red {
+.circle:hover .red {s
   transform: scale(1);
 	opacity: 1;
     
 }
 
 .circle-img1{
-  background-image: url(../imgs/trail1-2.png);  
+  background-image: url(../imgs/circle1.png);  
 }
 
 .circle-img2{
-  background-image: url(../imgs/trail1-2.png);  
+  background-image: url(../imgs/circle2.png);  
 }
 
 .circle-img3{
-  background-image: url(../imgs/trail1-2.png);  
+  background-image: url(../imgs/circle3.png);  
 }
 .circle-img4{
-  background-image: url(../imgs/trail1-2.png);  
+  background-image: url(../imgs/circle4.png);  
 }
 .circle-img5{
-  background-image: url(../imgs/trail1-2.png);  
+  background-image: url(../imgs/circle5.png);  
 }
 .circle-img6{
-  background-image: url(../imgs/trail1-2.png);  
+  background-image: url(../imgs/circle6.png);  
 }
 
 .circle-1 {
@@ -872,5 +883,17 @@ transition-property: width;
   transition-delay: 1s;
 */
   
+
+
+.code_credit{
+position:fixed;
+z-index:3000;
+/*margin-top:58vw;*/
+top:0vw;
+margin-top:62.5vw;
+left:0vw;
+margin-left:8vw;
+/*transform: rotate(-90deg);*/
+
 }
 
