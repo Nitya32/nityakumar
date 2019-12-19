@@ -923,3 +923,204 @@ margin-left:8vw;
 
 }
 
+@media only screen and (max-width: 800px) {
+
+h1{
+font-family:Lato;
+color:black;
+font-size:5vw;
+position:fixed;
+z-index:100;
+}
+
+    greatgrand{
+position:absolute;
+
+}
+.grandparent{
+position:relative;
+z-index:10;
+top:5vw;
+margin-left:15vw;
+}
+.parent1
+{
+display:grid;
+/*height:70vh;*/
+width:50vw;
+
+grid-template-areas: "y1" 
+                     "r2"
+                      "b3"
+                     "b1"
+                      "y2"
+                      "b4";
+/*margin-top:2vw;*/
+grid-gap:1vw;
+position:relative;
+}
+
+.circle1
+{
+grid-area:y1;
+
+border-radius:50%;
+height:50vw;
+width:50vw;
+position:relative;
+}
+
+.circle:hover .red {s
+  transform: scale(1);
+	opacity: 1;
+    
+}
+
+.circle-img1{
+  background-image: url(../imgs/circle1.png);  
+}
+
+.circle-img2{
+  background-image: url(../imgs/circle2.png);  
+}
+
+.circle-img3{
+  background-image: url(../imgs/circle3.png);  
+}
+.circle-img4{
+  background-image: url(../imgs/circle4.png);  
+}
+.circle-img5{
+  background-image: url(../imgs/circle5.png);  
+}
+.circle-img6{
+  background-image: url(../imgs/circle6.png);  
+}
+
+.circle-1 {
+    width: 100%;
+    height: 100%;
+  background-size: cover;
+  background-position: center;
+    border-radius:50%;
+  overflow: hidden;
+  box-shadow: 
+		inset 0 0 0 0 rgba(89, 64, 92, 0.4),
+		inset 0 0 0 20px rgba(255, 255, 255, 0.5),
+		0 1px 2px rgba(0, 0, 0, 0.3);
+	transition: all 0.4s ease-in-out;
+}
+
+.circle-1:hover {
+  box-shadow: 
+		inset 0 0 0 25vw rgba(89, 64, 92, 0.6),
+		inset 0 0 0 35px rgba(89, 64, 92, 0.6),
+		0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.red{
+    text-align: center;
+}
+.red h3 {
+  color: #fff;
+  text-transform: uppercase;
+font-family:Roboto Condensed;
+  letter-spacing:1vw;
+	font-size: 3vw;
+  height: 3vw;
+	margin: 0;
+    margin-bottom:1.7vw;
+	padding: 7vw 2vw 2vw 2vw;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.red p {
+  font-family:Roboto Condensed;
+  font-size: 2vw;
+  color: #fff;
+  border-top: 0.20vw solid rgba(255, 255, 255, 0.5);
+  padding-top: 1vw;
+  margin: 0 4vw 1vw;
+  line-height: 1.7vw;
+}
+
+.red p a {
+  text-decoration: none;
+  letter-spacing: 5vw;
+  color: #fff;
+}
+
+
+.red-2 {
+/*
+    background-image: url(../imgs/trail1-2.png);
+    background-size: cover;
+    background-position: center;
+*/
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+
+.red-2 p a:hover {
+	color: #59405c;
+}
+
+.circle2
+{
+grid-area:r2;
+border-radius:50%;
+height:50vw;
+width:50vw;
+position:relative;
+}
+.circle3
+{
+grid-area:b3;
+border-radius:50%;
+height:50vw;
+width:50vw;
+position:relative;
+}
+.circle4
+{
+grid-area:b1;
+border-radius:50%;
+height:50vw;
+width:50vw;
+position:relative;
+}
+.circle5
+{
+grid-area:y2;
+border-radius:50%;
+height:50vw;
+width:50vw;
+position:relative;
+}
+.circle6
+{
+grid-area:b4;
+border-radius:50%;
+height:50vw;
+width:50vw;
+position:relative;
+}
+
+.code_credit{
+position:fixed;
+z-index:-10;
+/*margin-top:58vw;*/
+bottom:0vw;
+margin-top:83vw;
+left:0vw;
+margin-left:8vw;
+/*transform: rotate(-90deg);*/
+
+}
+
+
+
+}
