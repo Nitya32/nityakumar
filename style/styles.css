@@ -1120,6 +1120,18 @@ margin-left:8vw;
 /*transform: rotate(-90deg);*/
 
 }
+    
+.code_credit{
+position:fixed;
+/*z-index:3000;*/
+/*margin-top:58vw;*/
+top:0vw;
+margin-top:120vw;
+left:0vw;
+margin-left:8vw;
+/*transform: rotate(-90deg);*/
+
+}
 
 
 
