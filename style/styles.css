@@ -8,6 +8,7 @@ html{
 /*       #65505C*/
        #C3D2C2;
 }
+
 .circle-1{
 cursor: url('../imgs/cursor_hover.png'),
 auto!important;  
@@ -1126,13 +1127,41 @@ position:fixed;
 /*z-index:3000;*/
 /*margin-top:58vw;*/
 top:0vw;
-margin-top:120vw;
+margin-top:163vw;
 left:0vw;
 margin-left:8vw;
 /*transform: rotate(-90deg);*/
 
 }
 
+.header1{
+margin-left:79vw;
+transition:all 1s;
+text-decoration:none;
+margin-top:15vw;
+}
 
+.header2{
+margin-left:79vw;
+margin-top:11.5vw;
+}
+.header3{
+margin-left:79vw;
+margin-top:8vw;
+}
+    
+.hamburger{
+border-color:black;
+background-color: white;
+border: 2px solid;
+border-radius:50%;
+height:5vw;
+width:5vw;
+position:fixed;
+right:2vw;
+top:2vw;
+z-index:1000;
+
+}
 
 }
